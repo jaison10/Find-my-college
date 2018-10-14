@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<title>Engineering By findmycollege</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="subpage">
+        <style>
+            .butto {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+    .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(247, 121, 121);
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(73, 70, 70);
+    border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);				
+}
+            </style>
+			<header id="header">
+				<div class="inner">
+					<a href="main.html" class="logo"><strong>Colleges</strong> by findmycollege</a>
+					<nav id="nav">
+						<a href="main.html">Home</a>
+						<a href="engg.html">Engineering</a>
+						<a href="elements.html">Elements</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+            </header>
+            <section id="three" class="wrapper">
+                    <div class="inner">
+                        <header class="align-center">
+                            <h2><strong>Branch</strong></h2>
+                            <p>Select the Branch </p>
+                        </header>
+                        <h2>Select from the list given below</h2>
+                        <label class="container">Computer Science 
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Information Science
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                              <label class="container">Electronics and communication
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Civil
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Mechanical
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            
+                        
+                        <div class="image round left">
+                            <img src="images/CHIP.jpg" alt="Pic 01" />
+                        </div>
+                        
+                    </div>
+                    
+                            <footer id="footer">
+                                    <div class="inner">
+                                        <h3>If u finished selecting the branch click next button<br />Or else u can go back and click Facilities</h3>
+                                       <a href="facilities.html" class="butto">NEXT</a>
+
+                                    </div>
+                                </footer>
+                            </section>
+                            </body>
+                            </html>
+                    
